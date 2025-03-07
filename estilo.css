@@ -1,23 +1,13 @@
+/*Cuerpo del Documento*/
 body {
     margin: 0; /* Elimina el margen predeterminado */
     font-family: Arial, sans-serif;
 }
 
+/*Encabezado del Documento*/
 header {
     display: grid;
     grid-template-columns: 200px 1fr; /* Dos columnas: barra lateral y contenido */
-}
-
-.gato {
-    width: 100%; /* Ocupa el ancho completo */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    overflow: hidden; /* Evita que la imagen se desborde */
-}
-
-.gato img {
-    width: 100%; /* La imagen ocupa el ancho completo */
-    height: 100%; /* La imagen ocupa la altura completa */
-    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
 }
 
 .sidebar {
@@ -30,10 +20,26 @@ header {
     box-sizing: border-box; /* Incluye el padding en el ancho */
 }
 
+/*Contenido Principal del Documento*/
 .content {
     margin-left: 250px; /* Margen igual al ancho de la barra lateral */
     padding: 0px; /* Espaciado interno */
 }
+
+/*Seccion 1*/
+.contenedor-seccion1 {
+    width: 100%; /* Ocupa el ancho completo */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.contenedor-seccion1 img {
+    width: 100%; /* La imagen ocupa el ancho completo */
+    height: 100%; /* La imagen ocupa la altura completa */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+
+
 
 /*Seccion 2*/
 .contenedor-seccion2 {
@@ -107,4 +113,38 @@ thead {
 
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+/*Seccion 5*/
+.contenedor-seccion5 {
+    align-items: center;
+    padding: 20px; /* Espaciado interno */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
 }
