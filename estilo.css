@@ -34,3 +34,25 @@ header {
     margin-left: 250px; /* Margen igual al ancho de la barra lateral */
     padding: 0px; /* Espaciado interno */
 }
+
+/*Seccion 2*/
+.contenedor-seccion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px; /* Espaciado interno */
+}
+
+.contenedor-imagen img{
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+.contenedor-texto {
+    padding: 10px; /* Espaciado interno */
+    font-size: 20px;
+    line-height: 1.2; /* Espaciado entre líneas */
+    font-family: "Gill Sans", sans-serif;
+}
